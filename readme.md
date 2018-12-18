@@ -4,6 +4,8 @@
 
 The file type is detected by checking the [magic number](http://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
 
+This repository is a fork of [sindresorhus/file-type](https://github.com/sindresorhus/file-type) with ES5 build. IE couldn't load the script and the projects using this package are not configured to transpile dependencies.
+Also started making a types file for typescript, but it isn't complete.
 
 ## Install
 

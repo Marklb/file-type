@@ -1,9 +1,9 @@
 {
-	"name": "file-type",
-	"version": "10.6.0",
+	"name": "@marklb/file-type",
+	"version": "10.6.2",
 	"description": "Detect the file type of a Buffer/Uint8Array",
 	"license": "MIT",
-	"repository": "sindresorhus/file-type",
+	"repository": "marklb/file-type",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -13,11 +13,16 @@
 		"node": ">=6"
 	},
 	"scripts": {
+		"build": "npx babel index.js --out-dir dist",
 		"test": "xo && ava"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"dist/index.js",
+		"index.d.ts"
 	],
+	"main": "dist/index.js",
+	"types": "index.d.ts",
 	"keywords": [
 		"mime",
 		"file",
@@ -118,6 +123,9 @@
 		"ics"
 	],
 	"devDependencies": {
+		"@babel/cli": "^7.2.0",
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.0",
 		"ava": "*",
 		"read-chunk": "^2.0.0",
 		"xo": "*"
