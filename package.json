@@ -1,6 +1,6 @@
 {
 	"name": "@marklb/file-type",
-	"version": "10.6.2",
+	"version": "10.6.5",
 	"description": "Detect the file type of a Buffer/Uint8Array",
 	"license": "MIT",
 	"repository": "marklb/file-type",
@@ -126,6 +126,7 @@
 		"@babel/cli": "^7.2.0",
 		"@babel/core": "^7.2.2",
 		"@babel/preset-env": "^7.2.0",
+		"@types/node": "^10.12.15",
 		"ava": "*",
 		"read-chunk": "^2.0.0",
 		"xo": "*"
